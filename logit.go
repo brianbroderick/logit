@@ -35,35 +35,35 @@ func init() {
 // Debug prints the format string with the prefix of "DEBUG:"
 func Debug(format string, v ...interface{}) {
 	if LogLevel() <= 0 {
-		log.Printf("DEBUG:"+format, v...)
+		log.Printf("DEBUG: "+format, v...)
 	}
 }
 
 // Info prints the format string with the prefix of "INFO:"
 func Info(format string, v ...interface{}) {
 	if LogLevel() <= 1 {
-		log.Printf("INFO:"+format, v...)
+		log.Printf("INFO: "+format, v...)
 	}
 }
 
 // Warn prints the format string with the prefix of "WARN:"
 func Warn(format string, v ...interface{}) {
 	if LogLevel() <= 2 {
-		log.Printf("WARN:"+format, v...)
+		log.Printf("WARN: "+format, v...)
 	}
 }
 
 // Error prints the format string with the prefix of "ERROR:"
 func Error(format string, v ...interface{}) {
 	if LogLevel() <= 3 {
-		log.Printf("ERROR:"+format, v...)
+		log.Printf("ERROR: "+format, v...)
 	}
 }
 
 // Fatal prints the format string with the prefix of "FATAL:"
 func Fatal(format string, v ...interface{}) {
 	if LogLevel() <= 4 {
-		log.Printf("FATAL:"+format, v...)
+		log.Printf("FATAL: "+format, v...)
 	}
 }
 
